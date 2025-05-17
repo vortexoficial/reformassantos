@@ -2492,3 +2492,11 @@ E. Template Specific Elements
   height: 100%;
   border: 0;
 }
+textarea,
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="submit"] {
+  color: #000;        /* cor do texto digitado */
+  background: #fff;   /* fundo branco (ou como preferir) */
+}
