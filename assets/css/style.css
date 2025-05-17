@@ -1124,23 +1124,23 @@ blockquote h6 {
 }
 
 .btn-primary.disabled, .btn-primary:disabled {
-    background-color: rgb(7, 84, 237);
-    border-color: rgb(7, 84, 237);
+    background-color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
 }
 
 .btn-primary:not(:disabled):not(.disabled):active:focus,
 .btn-primary:not(:disabled):not(.disabled).active:focus,
 .show > .btn-primary.dropdown-toggle:focus {
-    background-color: rgb(7, 84, 237);
-    border-color: rgb(6, 74, 208);
+    background-color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
     box-shadow: 0 .1875rem .9375rem rgba(0, 0, 0, .2);
 }
 
 .btn-primary:not(:disabled):not(.disabled):active,
 .btn-primary:not(:disabled):not(.disabled).active,
 .show > .btn-primary.dropdown-toggle {
-    background-color: rgb(7, 84, 237);
-    border-color: rgb(7, 84, 237);
+    background-color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
     box-shadow: 0 .1875rem .9375rem rgba(0, 0, 0, .2);
 }
 
@@ -1150,18 +1150,18 @@ blockquote h6 {
 }
 
 .btn-outline-primary {
-    border-color: #3a79f9;
-    color: #3a79f9;
+    border-color: #000000;
+    color: #000000;
 }
 
 .btn-outline-primary:hover {
-    background-color: #3a79f9;
-    border-color: #3a79f9;
+    background-color: #000000;
+    border-color: #000000;
 }
 
 .btn-outline-primary:not(:disabled):not(.disabled):active:focus {
-    background-color: #3a79f9;
-    border-color: #3a79f9;
+    background-color: #000000;
+    border-color: #000000;
     box-shadow: 0 0 0 .2rem rgba(58, 121, 249, .5);
 }
 
@@ -2481,6 +2481,7 @@ E. Template Specific Elements
   justify-content: center; /* centraliza verticalmente o texto dentro do retângulo */
   height: 100%;
 }
+
 .map-strip {
   width: 100%;
   height: 300px; /* ajuste conforme necessário */
@@ -2492,11 +2493,16 @@ E. Template Specific Elements
   height: 100%;
   border: 0;
 }
-textarea,
+
+textarea {
+  color: #000 !important;
+  background-color: #fff !important;
+}
+
 input[type="text"],
 input[type="email"],
 input[type="tel"],
-input[type="submit"] {
-  color: #000;        /* cor do texto digitado */
-  background: #fff;   /* fundo branco (ou como preferir) */
+textarea {
+  color: #000 !important;
+  background-color: #fff !important;
 }
