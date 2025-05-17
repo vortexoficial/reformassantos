@@ -29,4 +29,13 @@ if (filter_var($email, FILTER_VALIDATE_EMAIL) && mb_send_mail($to, $subject, $bo
 } else {
     echo '<div class="status-icon invalid"><i class="fa fa-times"></i></div>';
 }
+if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    if (mb_send_mail($to, $subject, $body, $headers)) {
+        echo 'SUCESSO: Email enviado.';
+    } else {
+        echo 'ERRO: Email não foi enviado. Verifique o servidor.';
+    }
+} else {
+    echo 'ERRO: Email inválido.';
+}
 ?>
