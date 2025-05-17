@@ -2481,3 +2481,14 @@ E. Template Specific Elements
   justify-content: center; /* centraliza verticalmente o texto dentro do retângulo */
   height: 100%;
 }
+.map-strip {
+  width: 100%;
+  height: 300px; /* ajuste conforme necessário */
+  overflow: hidden;
+}
+
+.map-frame {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
