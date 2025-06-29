@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="author" content="ThemeStarz">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,600">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" type="text/css">
@@ -507,7 +508,7 @@ Gratidão pela confiança dos nossos clientes
                                 <a href="assets/img/img-03.jpg" class="ts-gallery__image popup-image">
                                     <div class="ts-gallery__caption">
                                         <h5>Reforma </h5>
-                                        <h3>de Sala Comercial</h3>
+                                        <h3>de Fachada</h3>
                                     </div>
                                     <div class="ts-img-into-bg">
                                         <img src="assets/img/img-033.jpg" alt="">
@@ -699,84 +700,102 @@ Gratidão pela confiança dos nossos clientes
   </iframe>
 </section>
 
+<section id="contact" style="background-color:#12264f; padding: 40px 0;">
+  <style>
+    .contato-wrapper {
+      background: white;
+      border-radius: 8px;
+      margin: 0 auto;
+      padding: 30px 20px;
+      max-width: 95%;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    }
 
-            <section id="contact" class="ts-separate-bg-element" data-bg-image="assets/img/bg-hand-mobile.jpg" data-bg-image-opacity=".1" data-bg-color="#12264f">
-                <div class="container">
-                    <div class="ts-box mb-0 p-5 ts-mt__n-10" data-animate="ts-fadeInUp">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <h3>Contato</h3>
-                                <address>
-                                    <figure>
-                                        Rua Brigadeiro Galvão, 48 Santos-SP
-                                    </figure>
-                                    <br>
-                                    <figure>
-                                        <div class="font-weight-bold">Email:</div>
-                                        <a href="#">fariasergio909@gmail.com</a>
-                                    </figure>
-                                    <figure>
-                                        <div class="font-weight-bold">Whatsapp 1:</div>
-                                        +55 13 99176-8666
-                                    </figure>
-                                    <div class="font-weight-bold">Whatsapp 2:</div>
-                                    +55 16 99797-9724
-                                </address>
-                                <!--end address-->
-                            </div>
-                            <!--end col-md-4-->
-                            <div class="col-md-8">
-                                <h3>Envie-nos um e-mail</h3>
-                             <form id="form-contact" method="post" class="clearfix ts-form ts-form-email ts-inputs__transparent" data-php-path="assets/php/email.php">
+    .info-contato,
+    .contatos-numeros {
+      text-align: left;
+      margin-bottom: 20px;
+    }
 
-                                    <div class="row">
-                                        <div class="col-md-6 col-sm-6">
-                                            <div class="form-group">
-                                                <label for="form-contact-name">Seu nome: *</label>
-                                                <input type="text" class="form-control" id="form-contact-name" name="name" placeholder="Nome Completo" required>
-                                            </div>
-                                            <!--end form-group -->
-                                        </div>
-                                        <!--end col-md-6 col-sm-6 -->
-                                        <div class="col-md-6 col-sm-6">
-                                            <div class="form-group">
-                                                <label for="form-contact-email">Seu E-mail: *</label>
-                                                <input type="email" class="form-control" id="form-contact-email" name="email" placeholder="Seu E-mail" required>
-                                            </div>
-                                            <!--end form-group -->
-                                        </div>
-                                        <!--end col-md-6 col-sm-6 -->
-                                    </div>
-                                    <!--end row -->
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <label for="form-contact-message">Sua mensagem:</label>
-                                                <textarea class="form-control" id="form-contact-message" rows="5" name="message" placeholder="Sua mensagem" required></textarea>
-                                            </div>
-                                            <!--end form-group -->
-                                        </div>
-                                        <!--end col-md-12 -->
-                                    </div>
-                                    <!--end row -->
-                                    <div class="form-group clearfix">
-                                        <button type="submit" class="btn btn-primary float-right" id="form-contact-submit">Enviar mensagem</button>
-                                    </div>
-                                    <!--end form-group -->
-                                    <div class="form-contact-status"></div>
-                                </form>
-                                <!--end form-contact -->
-                            </div>
-                        </div>
-                        <!--end row-->
-                    </div>
-                    <!--end ts-box-->
-                    <div class="text-center text-white py-4">
-                        <small>© 2025 ReformaSSantos, Todos os direitos reservados.</small>
-                    </div>
-                </div>
-                <!--end container-->
-            </section>
+    .contatos-numeros figure {
+      margin-bottom: 1rem;
+    }
+
+    .whatsapp-label i {
+      color: #25d366;
+      margin-right: 6px;
+    }
+
+    @media (min-width: 992px) {
+      .contato-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 40px;
+        max-width: 900px;
+      }
+
+      .info-contato {
+        width: 45%;
+        text-align: left;
+      }
+
+      .contatos-numeros {
+        width: 45%;
+        text-align: right;
+        margin-top: 60px;
+      }
+    }
+
+    .contato-footer {
+      color: white;
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+
+  <div class="contato-wrapper">
+    <!-- Coluna Esquerda -->
+    <div class="info-contato">
+      <h3>Contato</h3>
+      <address>
+        <figure>
+          <div class="font-weight-bold">Endereço:</div>
+          Rua Brigadeiro Galvão, 48 Santos-SP
+        </figure>
+        <br>
+        <figure>
+          <div class="font-weight-bold">Email:</div>
+          <a href="mailto:fariasergio909@gmail.com">fariasergio909@gmail.com</a>
+        </figure>
+      </address>
+    </div>
+
+    <!-- Coluna Direita -->
+    <div class="contatos-numeros">
+  
+      <figure>
+        <div class="font-weight-bold whatsapp-label">
+          <i class="fab fa-whatsapp"></i> Whatsapp:
+        </div>
+        013 99176-8666
+      </figure>
+      <figure>
+        <div class="font-weight-bold whatsapp-label">
+          <i class="fab fa-whatsapp"></i> Whatsapp:
+        </div>
+        016 99797-9724
+      </figure>
+    </div>
+  </div>
+
+  <div class="contato-footer">
+    <small>© 2025 ReformaSSantos, Todos os direitos reservados.</small>
+  </div>
+</section>
+
+
+
 
         </footer>
         <!--end #footer-->
